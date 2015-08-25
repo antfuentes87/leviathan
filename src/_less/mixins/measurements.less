@@ -1,0 +1,14 @@
+/*
+GENERATE MEASUREMENTS FUNC
+*/
+.generate-measurements(@total, @prop, @size, @unit, @count: 1) when (@count =< @total) {
+	.@{prop}-@{size}-@{unit}-@{count}{
+		& when (@unit = percent) {
+			@{prop}: unit(@count, %);
+  		}
+		& when not (@unit = percent){
+			@{prop}: unit(@count, @unit);
+		}
+	}
+	.generate-measurements(@total, @prop, @size, @unit, (@count + 1));
+}
