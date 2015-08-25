@@ -4,7 +4,7 @@ GENERATE COLUMNS FUNC
 .generate-columns(@n, @prefix, @size, @i: 1) when (@i =< @n) {
 	.@{prefix}-@{size}-@{i} {
 		width: (@i * 100% / @n);
-		& when (@i < @n) {
+		/*& when (@i < @n) {
 			> .vertical{
 				position: relative;
 				top: 50%;
@@ -21,7 +21,7 @@ GENERATE COLUMNS FUNC
 				-ms-transform: translateY(-0%);
 				transform: translateY(-0%);	
 			}
-  		}
+  		}*/
 	}
 	.generate-columns(@n, @prefix, @size, (@i + 1));
 }
