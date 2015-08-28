@@ -10,7 +10,8 @@
   "dependencies": {
     "jquery": "latest",
     "matchHeight": "latest",
-    "jQuery-Flex-Vertical-Center": "latest"
+    "gsap": "latest"
+
   },
   "keywords": [
     "css",
