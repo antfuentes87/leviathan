@@ -1,19 +1,19 @@
 function init(){
- 	var arr = document.querySelectorAll("[data-min-height]");
-	for (var i = 0; i < arr.length; i++){
+ 	var minHeightArray = document.querySelectorAll("[data-min-height]");
+	for (var i = 0; i < minHeightArray.length; i++){
 		var currentWindowHeight = window.innerHeight;
-		var dataHeight = arr[i].dataset.minHeight;
+		var dataHeight = minHeightArray[i].dataset.minHeight;
 		var dataPercent = dataHeight / 100;
 		var dataPercentHeight = currentWindowHeight * dataPercent;
-		arr[i].style.minHeight = dataPercentHeight + "px";
+		minHeightArray[i].style.minHeight = dataPercentHeight + "px";
 	}
 	
-	var newArr = document.querySelectorAll(".vertical");	
-	for (var z = 0; z < arr.length; z++){
-		var verticalHeight = newArr[z].offsetHeight;
-		var parentHeight = newArr[z].parentNode.offsetHeight;
+	var verticalArray = document.querySelectorAll(".vertical");	
+	for (var z = 0; z < verticalArray.length; z++){
+		var verticalHeight = verticalArray[z].offsetHeight;
+		var parentHeight = verticalArray[z].parentNode.offsetHeight;
 		var marginTop = (parentHeight - verticalHeight) / 2;
-		newArr[z].style.marginTop = marginTop + "px";
+		verticalArray[z].style.marginTop = marginTop + "px";
 	}
 	window.onresize = init;
 }
