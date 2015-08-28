@@ -1,0 +1,25 @@
+{
+  "name": "leviathan",
+  "version": "0.0.0",
+  "homepage": "https://github.com/antfuentes87/leviathan",
+  "authors": [
+    "antfuentes87 <antfuentes87@gmail.com>"
+  ],
+  "description": "LESS Framework with little help from JS",
+  "main": "dist/css/leviathan.css",
+  "keywords": [
+    "css",
+    "less",
+    "javascript",
+    "jquery",
+    "min-height"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
