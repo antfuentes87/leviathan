@@ -7,6 +7,11 @@
   ],
   "description": "LESS Framework with little help from JS",
   "main": "dist/css/leviathan.css",
+  "dependencies": {
+    "jquery": "latest",
+    "matchHeight": "latest",
+    "jQuery-Flex-Vertical-Center": "latest"
+  },
   "keywords": [
     "css",
     "less",
