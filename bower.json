@@ -9,8 +9,10 @@
   "main": "dist/css/leviathan.css",
   "dependencies": {
     "jquery": "latest",
+    "gsap": "latest",
     "matchHeight": "latest",
-    "gsap": "latest"
+    "antfuentes87/jquery.tap": "latest",
+    "wallop": "latest"
 
   },
   "keywords": [
