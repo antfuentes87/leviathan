@@ -11,7 +11,7 @@
     "jquery": "latest",
     "gsap": "latest",
     "matchHeight": "latest",
-    "antfuentes87/jquery.tap": "latest",
+    "jquery.tap": "antfuentes87/jquery.tap",
     "wallop": "latest"
   },
   "keywords": [
