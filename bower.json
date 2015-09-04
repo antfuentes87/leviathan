@@ -12,7 +12,7 @@
     "gsap": "latest",
     "matchHeight": "latest",
     "antfuentes87/jquery.tap": "latest",
-    "peduarte/wallop": "*"
+    "wallop": "latest"
   },
   "keywords": [
     "css",
