@@ -1,0 +1,13 @@
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.container-center(@xs, @sm, @md, @lg){
+	.center;
+	@media (min-width: @xs-media-break){width: @xs}
+	@media (min-width: @sm-media-break){width: @sm;}
+	@media (min-width: @md-media-break){width: @md;}
+	@media (min-width: @lg-media-break){width: @lg;}
+}
