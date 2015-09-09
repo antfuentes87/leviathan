@@ -6,8 +6,28 @@
 
 .container-center(@xs, @sm, @md, @lg){
 	.center;
-	@media (min-width: @xs-media-break){width: @xs}
+	@media (min-width: @xs-media-break){width: @xs;}
 	@media (min-width: @sm-media-break){width: @sm;}
 	@media (min-width: @md-media-break){width: @md;}
 	@media (min-width: @lg-media-break){width: @lg;}
+}
+
+.display(@display: block){
+	display: @display;
+}
+
+.display-xs(@display: block){
+	@media (min-width: @xs-media-break){display: @display;}
+}
+
+.display-sm(@display: block){
+	@media (min-width: @sm-media-break){display: @display;}
+}
+
+.display-md(@display: block){
+	@media (min-width: @md-media-break){display: @display;}
+}
+
+.display-lg(@display: block){
+	@media (min-width: @lg-media-break){display: @display;}
 }
