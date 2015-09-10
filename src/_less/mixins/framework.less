@@ -31,3 +31,10 @@
 .display-lg(@display: block){
 	@media (min-width: @lg-media-break){display: @display;}
 }
+
+.prop-media(@prop, @xs, @sm, @md, @lg){
+	@media (min-width: @xs-media-break){@prop: @xs;}
+	@media (min-width: @sm-media-break){@prop: @sm;}
+	@media (min-width: @md-media-break){@prop: @md;}
+	@media (min-width: @lg-media-break){@prop: @lg;}
+}
