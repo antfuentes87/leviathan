@@ -13,7 +13,8 @@
     "matchHeight": "latest",
     "jquery.tap": "antfuentes87/jquery.tap",
     "wallop": "latest",
-    "font-awesome": "latest"
+    "font-awesome": "latest",
+    "pickadate": "latest"
   },
   "keywords": [
     "css",
