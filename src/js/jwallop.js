@@ -1,8 +1,9 @@
-function JWallop(sectionID, options, useDots, onChangeFunc) {
+function JWallop(sectionID, options, useDots, dotCurrentClass, onChangeFunc) {
     //Defaults and self
     var self = this;
     this.onChangeFunc = onChangeFunc || function() {};
-    this.useDots = (useDots === true) ? true : false
+    this.useDots = (useDots === true) ? true : false;
+    this.dotCurrentClass = (typeof(dotCurrentClass)===undefined) ? "" : dotCurrentClass;
     //useDots can be true or false - defaults to false
     
     this.wallop = new Wallop(document.getElementById(sectionID), options);
@@ -31,9 +32,10 @@ function JWallop(sectionID, options, useDots, onChangeFunc) {
 
         //$('.Wallop-dot--current', $(event.detail.wallopEl)).removeClass("Wallop-dot--current");
         if (self.useDots){
-            self.removeClass(document.getElementById(sectionID).querySelector('.Wallop-dot--current'),
-                'Wallop-dot--current');
-            self.addClass(self.paginationDots[event.detail.currentItemIndex], 'Wallop-dot--current');
+	    var currentDot = document.getElementById(sectionID).querySelector('.Wallop-dot--current');
+            self.removeClass(currentDot,'Wallop-dot--current');
+            self.removeClass(currentDot,self.dotCurrentClass);
+            self.addClass(self.paginationDots[event.detail.currentItemIndex], 'Wallop-dot--current' + " " + self.dotCurrentClass);
         }
     });
 
