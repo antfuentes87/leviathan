@@ -2,7 +2,7 @@ var items = $(".acc-item"),
 activeItem = null;
 
 $.each(items, function(i, e) {
-	var content = $(e).children(".acc-content");
+	var content = $(".acc-content", e);
 	t = TweenLite.from(content, 0.5, {
 		height: 0,
 		paused: true,
