@@ -69,7 +69,7 @@ function createAccordionTween(target, index) {
 /*
 *  CLICK EVENT
 */
-titles.click(function(){
+titles.tap(function(){
 
 	var targetContent = $(this).siblings(".content-container")[0],
 	targetAnimation = targetContent.toggleAnimation,
